@@ -1,1 +1,39 @@
 theme: jekyll-theme-minimal
+plugins:
+  - jekyll-coffeescript
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jemoji
+  - jekyll-mentions
+  - jekyll-redirect-from
+timezone: America/Los_Angeles
+collections:
+  docs:
+    permalink: "/:collection/:path"
+    output: true
+  posts:
+    permalink: "/news/:year/:month/:day/:title/"
+    output: true
+  pages:
+    output: true
+sass:
+  style: compressed
+exclude:
+  - .gitattributes
+  - .gitignore
+  - .jekyll-cache
+  - readme.md
+  - LICENSE
+  - COMPILING.md
+ feed:
+   categories:
+     - release
